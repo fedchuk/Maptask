@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Maptask</string>
+    <string name="app_name">MapTask</string>
     <string name="google_maps_key">AIzaSyCEe7Ssoi4QvfZR1JG7jHmJ95678edIvKo</string>
 
     <string name="activity_main_enable_location">Enable Location</string>

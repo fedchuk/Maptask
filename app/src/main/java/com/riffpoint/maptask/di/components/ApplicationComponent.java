@@ -3,7 +3,7 @@ package com.riffpoint.maptask.di.components;
 import android.app.Application;
 import android.content.Context;
 
-import com.riffpoint.maptask.Maptask;
+import com.riffpoint.maptask.MapTask;
 import com.riffpoint.maptask.data.db.AppDatabase;
 import com.riffpoint.maptask.di.ApplicationContext;
 import com.riffpoint.maptask.di.module.ApplicationModule;
@@ -20,7 +20,7 @@ import dagger.Component;
 @Component(modules = ApplicationModule.class)
 public interface ApplicationComponent {
 
-    void inject(Maptask app);
+    void inject(MapTask app);
 
     @ApplicationContext
     Context context();

@@ -9,9 +9,8 @@ import android.support.annotation.IdRes;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
-import com.riffpoint.maptask.Maptask;
+import com.riffpoint.maptask.MapTask;
 import com.riffpoint.maptask.di.components.ActivityComponent;
 import com.riffpoint.maptask.di.components.DaggerActivityComponent;
 import com.riffpoint.maptask.di.module.ActivityModule;
@@ -43,7 +42,7 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
     private void initializeActivityComponent() {
         mActivityComponent = DaggerActivityComponent.builder()
                 .activityModule(new ActivityModule(this))
-                .applicationComponent(((Maptask) getApplication()).getComponent())
+                .applicationComponent(((MapTask) getApplication()).getComponent())
                 .build();
     }
 

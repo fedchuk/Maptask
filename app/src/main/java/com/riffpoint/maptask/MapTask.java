@@ -12,7 +12,7 @@ import com.riffpoint.maptask.di.module.ApplicationModule;
  * Created by Fedchuk Maxim on 2018-10-06.
  * Copyright (c) 2018 Fedchuk Maxim All rights reserved.
  */
-public class Maptask extends Application {
+public class MapTask extends Application {
     private static ApplicationComponent mApplicationComponent;
 
     public static Context getContext() {
