@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Maptask</string>
+    <string name="google_maps_key">AIzaSyCEe7Ssoi4QvfZR1JG7jHmJ95678edIvKo</string>
+
+    <string name="activity_main_enable_location">Enable Location</string>
+    <string name="activity_main_mess_location">Your Locations Settings is set to \'Off\'.\nPlease Enable Location to use this app</string>
+    <string name="activity_main_setting_location">Location Settings</string>
+    <string name="activity_main_cancel_location">Cancel</string>
+    <string name="info_window_adress">Adress:</string>
+    <string name="info_window_owner">Owner:</string>
+</resources>

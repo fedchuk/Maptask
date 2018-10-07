@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/image_map"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:text="Example text" />
+
+            <ImageView
+                android:id="@+id/image_gps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_title"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/image_map"
+                android:src="@drawable/ic_gps" />
+
+            <TextView
+                android:id="@+id/text_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_title"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/image_gps"
+                android:text="12 km"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/darker_gray" />
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:id="@+id/rating"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_title"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/text_distance"
+                android:numStars="5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@+id/image_map"
+                android:background="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_window_adress"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 GoldField Rd. Honolulu, HI 96815"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_window_owner"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Byron Willis"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/darker_gray"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="(12 other items)"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/darker_gray" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
